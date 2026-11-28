@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/admissions" },
 };
  
-const PHONE = "+977 9812345678"; // confirm with the school
+const PHONE = "+977 9841828074"; // confirm with the school
 const EMAIL = "triyogacademy@gmail.com";
 const WHATSAPP = `https://wa.me/9779841828074?text=${encodeURIComponent("Hello, I would like to apply to Triyog Academy.")}`;
 
