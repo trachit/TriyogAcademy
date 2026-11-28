@@ -71,12 +71,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="band wrap">
-        <h2 className="text-3xl font-bold text-navy">Campus Life</h2>
-        <p className="mt-4 rounded-2xl border border-dashed border-navy/20 p-10 text-center text-ink/60">Authentic school photographs will appear here once supplied and cleared for publication.</p>
-        <Link href="/gallery" className="btn-navy mt-6">View Full Gallery</Link>
-      </section>
-
       <section className="band bg-mist">
         <div className="wrap"><h2 className="text-3xl font-bold text-navy">News &amp; Announcements</h2><p className="mt-4 text-ink/60">No announcements published yet.</p></div>
       </section>
