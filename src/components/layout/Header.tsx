@@ -1,8 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { nav } from "./nav";
 
-// Mobile menu is CSS-only (<details>), so the header ships no client JS.
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-paper/90 backdrop-blur">
@@ -17,7 +18,10 @@ export default function Header() {
           ))}
           <Link href="/admissions" className="btn-primary">Apply for Admission</Link>
         </nav>
-        <details className="relative lg:hidden">
+        <details
+          className="relative lg:hidden"
+          onClick={(e) => (e.target as HTMLElement).closest("a") && e.currentTarget.removeAttribute("open")}
+        >
           <summary className="btn-navy cursor-pointer list-none">Menu</summary>
           <nav aria-label="Mobile" className="absolute right-0 mt-2 grid w-64 gap-1 rounded-xl border border-navy/10 bg-white p-3 shadow-lg">
             {nav.map(([label, href]) => (
