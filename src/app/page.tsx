@@ -1,4 +1,4 @@
-import Image from "nexr/image";
+import Image from "next/image";
 import Link from "next/link";
 import { FACEBOOK } from "@/components/layout/nav";
 
