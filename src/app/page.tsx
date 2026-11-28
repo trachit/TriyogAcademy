@@ -1,3 +1,4 @@
+import Image from "nexr/image";
 import Link from "next/link";
 import { FACEBOOK } from "@/components/layout/nav";
 
@@ -28,7 +29,9 @@ export default function Home() {
       </section>
 
       <section className="band wrap grid items-center gap-10 md:grid-cols-2">
-        <div className="grid aspect-[4/3] place-items-center rounded-2xl bg-mist text-sm text-ink/50">School photograph (to be supplied)</div>
+        <div className="grid aspect-[4/3] place-items-center rounded-2xl bg-mist p-8">
+          <Image src="/images/logos/logo.png" alt="Triyog Academy logo" width={320} height={320} className="h-full w-auto object-contain" />
+        </div>
         <div>
           <p className="eyebrow">Welcome</p>
           <h2 className="mt-2 text-3xl font-bold text-navy">Welcome to Triyog Academy</h2>
